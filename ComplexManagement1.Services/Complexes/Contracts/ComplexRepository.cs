@@ -11,18 +11,10 @@ namespace ComplexManagement1.Services.Complexes.Contracts
     public interface ComplexRepository
     {
         void Add(Complex complex);
-
-        //ToDo IsExistById
-        bool IdExist(int id);
-        List<GetAllComplexesDto> GetAll(SearchComplexDto dto);
-        List<GetAComplexDto> GetById(int id);
-        List<GetComplexByIdDto> GetByIdWithBlocks(int id);
+        List<GetAllComplexesDto> GetAll();
         Complex FindById(int id);
-
-
-
-
-
-
+        void Update(Complex complex);
+        List<GetAllComplexesWithUnitsdetailsDto> GetAllWithUnitsDetails(string? name = null);
+        GetAComplexDto GetById(int id);
     }
 }

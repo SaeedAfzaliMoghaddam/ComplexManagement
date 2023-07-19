@@ -14,15 +14,14 @@ namespace ComplexManagement1.Persistance.EF.Complexes
         public void Configure(EntityTypeBuilder<Complex> _)
         {
             _.ToTable("Complexes");
-            _.HasKey(_=>_.Id);
+            _.HasKey(_ => _.Id);
             _.Property(_ => _.Id)
                 .ValueGeneratedOnAdd();
             _.Property(_ => _.Name)
-                .HasMaxLength(50)
+                .HasMaxLength(255)
                 .IsRequired();
             _.Property(_ => _.UnitCount)
                 .IsRequired();
-
         }
     }
 }

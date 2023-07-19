@@ -17,9 +17,9 @@ namespace ComplexManagement1.Entities
 
     public enum ResidenseType
     {
-        empty = 0,
-        owner = 1,
-        tenent = 2
+        empty = 1,
+        owner = 2,
+        tenent = 3
     }
 }
 

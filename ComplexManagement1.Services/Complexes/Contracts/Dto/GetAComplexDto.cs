@@ -10,12 +10,8 @@ namespace ComplexManagement1.Services.Complexes.Contracts.Dto
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int FilledUnits { get; set; }
-        public int RemainingUnits { get; set; }
-        public int BlockCount { get; set; }
-
-
-
-
+        public int FilledUnitCount { get; set; }
+        public int RemainingUnitCount { get; set; }
+        public int FilledBlocks { get; set;}
     }
 }

@@ -11,6 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexManagement1.Services
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexManagement1.Persistance.EF", "ComplexManagement.Persistance.EF\ComplexManagement1.Persistance.EF.csproj", "{776A82AC-8982-4395-9A54-667A647291E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9BE46ACD-5EB1-485A-A2DC-5D9F02527A02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexManagement1.Services.Unit.Test", "test\ComplexManagement1.Services.unit.Test\ComplexManagement1.Services.Unit.Test.csproj", "{C2E62EC2-F274-41C5-865E-8C6DB65D338E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexManagement1.RestApi", "ComplexManagement1.RestApi\ComplexManagement1.RestApi.csproj", "{7B0CEA78-8D98-40A5-8728-03B957737943}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,14 @@ Global
 		{776A82AC-8982-4395-9A54-667A647291E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776A82AC-8982-4395-9A54-667A647291E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776A82AC-8982-4395-9A54-667A647291E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E62EC2-F274-41C5-865E-8C6DB65D338E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E62EC2-F274-41C5-865E-8C6DB65D338E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E62EC2-F274-41C5-865E-8C6DB65D338E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E62EC2-F274-41C5-865E-8C6DB65D338E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0CEA78-8D98-40A5-8728-03B957737943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0CEA78-8D98-40A5-8728-03B957737943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0CEA78-8D98-40A5-8728-03B957737943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0CEA78-8D98-40A5-8728-03B957737943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

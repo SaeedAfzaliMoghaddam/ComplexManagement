@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace ComplexManagement1.Services.Complexes.Contracts.Dto
 {
-    public class GetComplexByIdDto
+    public class GetAllComplexesWithUnitsdetailsDto
     {
-        public GetComplexByIdDto()
-        {
-            Blocks = new List<GetBlocksOfComplexDto>();
-        }
-
+        public int Id { get; set; }
         public string Name { get; set; }
-        public List<GetBlocksOfComplexDto> Blocks { get; set; }
+        public int FilledUnitCount { get; set; }
+        public int RemainingUnitCount { get; set; }
+
     }
 }
