@@ -120,7 +120,7 @@ namespace ComplexManagement1.Services.Unit.Test.Units
             var sut = new UnitAppService(repository, unitOfWork, blockRepository);
             var complex = new Complex
             {
-                Name= "dummyC",
+                Name= "dummys",
             };
             var block = new Block
             {
