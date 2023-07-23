@@ -10,7 +10,7 @@ namespace ComplexManagement1.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int BlockId { get; set; }
+        public int BlockId  { get; set; }
         public Block Block { get; set; }
         public ResidenseType ResidenseType { get; set; }
     }

@@ -1,7 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace TaavArchitecture.TestTools.Infrastructure.DataBaseConfig;
+namespace ComplexManagement1.Services.Unit.Test.DataBaseConfig;
 
 public static class DbContextHelper
 {
@@ -13,7 +13,7 @@ public static class DbContextHelper
         manipulate(dbContext);
         dbContext.SaveChanges();
     }
-    
+
     public static void Save<TDbContext, TEntity>(
         this TDbContext dbContext,
         TEntity entity)

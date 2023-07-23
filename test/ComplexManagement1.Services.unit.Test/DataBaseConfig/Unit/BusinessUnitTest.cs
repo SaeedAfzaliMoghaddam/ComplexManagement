@@ -1,7 +1,7 @@
 
 using ComplexManagement1.Persistance.EF;
-
-namespace TaavArchitecture.TestTools.Infrastructure.DataBaseConfig.Unit;
+using ComplexManagement1.Services.Unit.Test.DataBaseConfig;
+namespace ComplexManagement1.Services.Unit.Test.DataBaseConfig.Unit;
 
 public class BusinessUnitTest
 {
@@ -13,12 +13,12 @@ public class BusinessUnitTest
     protected BusinessUnitTest()
     {
         var db = new EFInMemoryDatabase();
-        
+
         DbContext = db.CreateDataContext<EFDataContext>();
         SetupContext = db.CreateDataContext<EFDataContext>();
         ReadContext = db.CreateDataContext<EFDataContext>();
     }
-    
+
 
 
     protected void Save<T>(T entity)

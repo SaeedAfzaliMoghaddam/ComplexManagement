@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TaavArchitecture.TestTools.Infrastructure.DataBaseConfig;
+namespace ComplexManagement1.Services.Unit.Test.DataBaseConfig;
 
 public static class EnumerableHelper
 {
@@ -32,7 +32,7 @@ public static class EnumerableHelper
         using var enumerator = source.GetEnumerator();
         while (enumerator.MoveNext())
         {
-            if (Object.Equals(enumerator.Current, item) == false)
+            if (Equals(enumerator.Current, item) == false)
                 yield return enumerator.Current;
         }
     }

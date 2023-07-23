@@ -3,7 +3,7 @@ using System.Reflection;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace TaavArchitecture.TestTools.Infrastructure.DataBaseConfig.Unit;
+namespace ComplexManagement1.Services.Unit.Test.DataBaseConfig.Unit;
 
 public class EFInMemoryDatabase : IDisposable
 {
@@ -61,7 +61,7 @@ public class EFInMemoryDatabase : IDisposable
 
         return constructor;
     }
-    
+
 
     private Func<TDbContext> ResolveFactory<TDbContext>()
         where TDbContext : DbContext
@@ -89,7 +89,7 @@ public class EFInMemoryDatabase : IDisposable
                 }) as
                 TDbContext)!;
     }
-    
+
     public TDbContext CreateDataContext<TDbContext>(
         params object[] entities)
         where TDbContext : DbContext

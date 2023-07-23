@@ -4,6 +4,8 @@ using ComplexManagement1.Persistance.EF.Complexes;
 using ComplexManagement1.Services.Complexes;
 using ComplexManagement1.Services.Complexes.Contracts.Dto;
 using ComplexManagement1.Services.Complexes.Exceptions;
+using ComplexManagement1.Services.Unit.Test.DataBaseConfig;
+using ComplexManagement1.Services.Unit.Test.DataBaseConfig.Unit;
 using FluentAssertions;
 using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities;
@@ -12,8 +14,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using TaavArchitecture.TestTools.Infrastructure.DataBaseConfig;
-using TaavArchitecture.TestTools.Infrastructure.DataBaseConfig.Unit;
 
 namespace ComplexManagement1.Services.Unit.Test.Complexes
 {
